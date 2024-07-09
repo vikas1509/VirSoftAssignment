@@ -7,7 +7,7 @@ const CryptoItem = ({ coin, price, addToCart }) => {
     const parsedQty = parseFloat(qty);
     if (!isNaN(parsedQty) && parsedQty > 0) {
       addToCart(coin, parsedQty, price);
-      setQty(''); // reset quantity after adding to cart
+      setQty(''); 
     }
   };
 
